@@ -1,0 +1,12 @@
+nome = str(input("Digite o seu nome:\n"))
+nt1 = float(input("Digite sua nota 1:\n"))
+nt2 = float(input("Digite sua nota 2:\n"))
+faltas = int(input("Digite números de faltas:\n"))
+media = (nt1 + nt2)/2
+
+if media < 7:
+    print(f"{nome} Você foi Reprovado(a) por media")
+if faltas > 3:
+    print(f"{nome} Você foi Reprovado(a) por falta")
+if media >= 7 and faltas <= 3:
+    print(f"{nome} foi Aprovado(a)")
