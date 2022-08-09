@@ -1,0 +1,68 @@
+Desenvolva um código que simule uma eleição com três candidatos.
+- candidato_X => 889
+- candidato_Y => 847
+- candidato_Z => 515
+- branco => 0
+
+O código deve perguntar se deseja finalizar a votação depois do voto. Caso o número do voto não corresponda a nenhum candidato ou seja branco, ele deve ser tratado como nulo. Se for inserido um texto ao invés de número, o código deve retornar uma mensagem para votar novamente.
+
+Quando a votação for finalizada, o código deverá mostrar o vencedor, aquele com o maior número de votos e, também, a quantidade de votos de cada candidato, os brancos e nulos 
+
+
+
+import enum
+class erros(enum.Enum):
+    TypeError = 1
+    ValueError = 2
+
+candidato_X = 0
+candidato_Y = 0
+candidato_Z = 0
+brancos_nulos = 0
+
+while True:
+    try:
+        resp = int(input("Para votar digite o número que corresponde ao seu candidato:\n- candidato X => 889\n- candidato Y => 847\n- candidato Z => 515\n- branco => 0:\n"))
+    except (TypeError, ValueError):
+        print("\nNúmero que corresponde ao candidato inválido, Por favor vote novamente!!\n")
+        continue
+
+    if resp == 889:
+      candidato_X += 1
+            
+    if resp == 847:
+      candidato_Y += 1
+            
+    if resp == 515:
+      candidato_Z += 1
+            
+    if (resp >= 0 or resp <= 0) and (resp != 515) and (resp != 847) and (resp != 889):
+      brancos_nulos += 1
+            
+    while True:
+        sair = input("Deseja finalizar a votação? Digite SIM para finalizar ou digite NÃO para votar novamente: ")
+        if sair == "sim":
+            if (candidato_X > candidato_Y) and (candidato_X > candidato_Z):
+                print("\nO ganhador foi o candidato X\n")
+            elif (candidato_Y > candidato_X) and (candidato_Y > candidato_Z):
+                print("\nO ganhador foi o candidato Y\n")
+            elif (candidato_Z > candidato_X) and (candidato_Z > candidato_Y):
+                print("\nO ganhador foi o candidato Z\n")
+            else:
+                print("\nNenhum Vencedor\n")
+
+            print(f"Votos candidato X: ", candidato_X)
+            print(f"Votos candidato Y: ", candidato_Y)
+            print(f"Votos candidato Z: ", candidato_Z)
+            print(f"Votos em branco e nulos: ", brancos_nulos)
+            break
+
+        elif sair == "nao":
+            break
+
+        else:
+            print("Valor digitado inválido\n")
+            continue
+
+    if sair == "sim":
+        break
