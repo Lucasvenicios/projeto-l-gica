@@ -1,0 +1,61 @@
+i, aux: inteiro  
+
+v: vetor[1..10] de inteiro 
+
+troca: logico  
+
+ 
+
+Inicio  
+
+v[1] <- 35 
+
+v[2] <-  25 
+
+v[3] <- 13 
+
+v[4] <- 10 
+
+v[5] <- 58  
+
+v[6] <- 70 
+
+v[7] <- 80 
+
+v[8] <- 90 
+
+v[9] <- 60 
+
+v[10] <- 50  
+
+troca <- verdadeiro  
+
+enquanto troca = verdadeiro faca  
+
+troca <- falso  
+
+	para s de 1 ate 9 faca  
+
+		se v[i] > v[i+1] entao  
+
+			aux <- v[i]  
+
+			v[i] <- v[i+1]  
+
+			v[i+1] <- aux  
+
+			troca <- verdadeiro  
+
+			fimse  
+
+		fimpara  
+
+fimenquanto  
+
+escreval("Sequencia")  
+
+para s de 1 ate 10 faca  
+
+escreva(v[i])  
+
+fimpara  
