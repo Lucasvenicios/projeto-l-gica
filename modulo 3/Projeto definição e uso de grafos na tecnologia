@@ -1,0 +1,10 @@
+Pesquise sobre os grafos e apresente dois exemplos de como são utilizados no contexto tecnológico.
+
+
+Grafos são amplamente usados em matemática, mas sobretudo em programação. Formalmente, um grafo é uma colecção de vértices (V) e uma colecção de arcos (E) constituídos por pares de vértices. É uma estrutura usada para representar um modelo em que existem relações entre os objetos de uma certa colecção. 
+
+A remoção de dados das restrições do banco de dados relacional facilita a travessia de seus dados para encontrar conexões - ou seja, se você mapear os dados na forma de um grafo com entidades representadas como vértices e relações representadas como bordas. 
+
+Ao fazer isso, você pode descobrir relacionamentos que não eram óbvios antes, e esse é o motivo da tecnologia de grafos ter se tornado cada vez mais popular e importante no mundo de dados conectados de hoje. Nos últimos três anos consecutivos, o Gartner selecionou a tecnologia de grafos como uma das suas dez principais tendências de dados e análise 
+
+Os grafos são projetados para ajudá-lo a modelar relacionamentos em seus aplicativos. Eles são desenvolvidos para lidar com dados altamente conectados. Devido ao aumento no volume e conectividade dos dados de hoje e porque muitos dos dados de hoje estão conectados através de relacionamentos, há uma tremenda oportunidade para grafos fornecerem um valor extraordinário para sua organização. 
