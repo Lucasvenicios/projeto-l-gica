@@ -1,0 +1,31 @@
+Crie um tipo abstrato de dado (TAD) para manipular números complexos na linguagem Python.
+O método deve:
+
+- calcular três números complexos;
+- realizar todas as operações básicas;
+- e imprimir as propriedades real e img do números. 
+
+
+class Numcomplexos():
+  def __init__(self, prim_complexo, seg_complexo, ter_complexo):
+    self.prim_complexo = prim_complexo
+    self.seg_complexo = seg_complexo
+    self.ter_complexo = ter_complexo
+
+print(f"Primeiro numero:")
+a = int(input("Informe a parte real do primeiro número: "))
+b = int(input("Informe a parte imaginária do primeiro número: "))
+prim_complexo = complex(a, b)
+print(f"Segundo numero:")
+c = int(input("Informe a parte real do segundo número: "))
+d = int(input("Informe a parte imaginária do segundo número: "))
+seg_complexo = complex(c, d)
+print(f"Terceiro numero:")
+e = int(input("Informe a parte real do terceiro número: "))
+f = int(input("Informe a parte imaginária do terceiro número: "))
+ter_complexo = complex(e, f)
+
+print("A soma dos 3 números complexos é:", a + c + e, "+", b + d + f, "j")
+print("A diferença dos 3 números complexos é:", a - c - e, "+", b - d - f, "j")
+print("A multiplicação dos 3 números complexos é:", a * c * e, "+", b * d * f, "j")
+print("A divisão dos 3 números complexos é:", a / c / e, "+", b / d / f, "j")
