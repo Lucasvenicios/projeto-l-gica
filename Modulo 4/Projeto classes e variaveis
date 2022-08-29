@@ -1,0 +1,28 @@
+Crie uma classe de sua preferência com, no mínimo, uma variável, um método e um incremento. Depois, desenvolva três ou mais objetos para testar o código.
+
+
+class Passageiros:
+  
+  total = 0
+
+  def __init__(self, nome, destino):
+    self.nome = nome
+    self.destino = destino
+    Passageiros.total += 1
+
+  def exibirPassageiros(self):
+    print("Passageiro:", self.nome, "- Destino:", self.destino)
+
+Passageiro1 = Passageiros("Lucas", "Maceio")
+Passageiro1.exibirPassageiros()
+
+Passageiro2 = Passageiros("Priscila", "João pessoa")
+Passageiro2.exibirPassageiros()
+
+Passageiro3 = Passageiros("Vanessa", "Recife")
+Passageiro3.exibirPassageiros()
+
+Passageiro4 = Passageiros("Pedro", "Rio de janeiro")
+Passageiro4.exibirPassageiros()
+
+print("Total de Passageiros:", Passageiros.total)
