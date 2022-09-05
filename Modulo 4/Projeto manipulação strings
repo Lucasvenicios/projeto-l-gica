@@ -1,0 +1,9 @@
+Estruture três códigos, os quais devem conter uma função de manipulação de string que obtenha resultado.
+
+time = str(input('Escreva seu time do coração: '))
+print('Seu time em letras maiúsculas: ')
+print(time.upper())
+print('Seu time em letras minúsculas: ')
+print(time.lower())
+print('Seu time invertido: ')
+print(time[::-1])
