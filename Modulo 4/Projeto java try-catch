@@ -1,0 +1,33 @@
+Crie uma situação em que ocorra uma exceção dentro de um código. Utilize try/catch para realizar a captura e tratamento dessa exceção.
+
+
+
+public class TesteString {
+  private static void diminuirLetras() throws Exception //lançando exceção
+  {
+    String frase = null;
+    String novaFrase = null;
+    try
+    {
+      novaFrase = frase.toUpperCase();
+    }
+    catch(NullPointerException e)
+    {
+      throw new Exception(e);
+    }
+    System.out.println("Frase anterior: "+frase);
+    System.out.println("Frase nova: "+novaFrase);
+  }
+  public static void main(String args[])
+  {
+    try
+    {
+      diminuirLetras();
+    }
+    catch(Exception e)
+    {
+      System.out.println("Ocorreu uma excecão ao
+      executar o método diminuirLetras() "+e);
+    }
+  }
+}
