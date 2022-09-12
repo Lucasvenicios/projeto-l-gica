@@ -1,0 +1,27 @@
+Crie uma classe e insira nela, no mínimo, dois atributos, os quais devem ter um método acessor (get) e um método modificador (set) para cada. Defina um objeto para cada atributo e elabore um construtor para criar alguma regra.
+
+A atividade pode ser realizada em qualquer linguagem de programação ou apenas utilizando algoritmos.
+
+
+class Time:
+    def __init__(self, time, nome):
+        self.time = time
+        self.nome = nome 
+
+    def get_time(self):
+        return self.nome
+
+    def set_nome(self, nome):
+        self.nome = nome
+
+    def get_time(self):
+        return self.time
+
+    def set_time(self, time):
+        self.time = time
+
+print(time.__dict__)
+time.time = str(input("Por favor digite seu time: "))
+time.nome = str(input("Por favor digite seu nome: "))
+print(time.time)
+print(time.nome)
