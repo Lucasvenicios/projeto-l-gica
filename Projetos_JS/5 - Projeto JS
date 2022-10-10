@@ -1,0 +1,32 @@
+Com os conceitos aprendidos, crie um programa de calculadora que: 
+
+receba dois valores, que devem ser salvos em variáveis; 
+o usuário deve colocar qual operador ele vai utilizar por meio dos símbolos aritméticos; 
+com os dois valores e o operador definido, o programa deve fazer a operação e retornar o resultado; 
+se houver divisão, você deve retornar o resultado e a sobra, caso haja alguma. 
+
+let valor1 = Number(window.prompt('Escreva o primeiro número:'))
+let valor2 = Number(window.prompt('Escreva o segundo número:'))
+let operacao = window.prompt('Escreva a operação desejada, opções ao lado: "+, -, *, /"')
+
+if (operacao == '+'){
+    res = valor1 + valor2
+    document.write(`O resultado de ${valor1} ${operacao} ${valor2} é ${res}`)
+}
+else if (operacao == '-'){
+    res = valor1 - valor2
+    document.write(`O resultado de ${valor1} ${operacao} ${valor2} é ${res}`)
+}
+else if (operacao == '*'){
+    res = valor1 * valor2
+    document.write(`O resultado de ${valor1} ${operacao} ${valor2} é ${res}`)
+}
+else if (operacao == '/'){
+    res = valor1 / valor2
+    resto = valor1 % valor2
+    document.write(`O resultado de ${valor1} ${operacao} ${valor2} é ${res}`)<br>
+    document.write(`O resto é ${resto}`)
+}
+else {
+    window.alert('A operação que você escolheu nao foi encontrada')
+}
