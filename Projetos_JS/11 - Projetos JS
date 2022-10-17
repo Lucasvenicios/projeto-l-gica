@@ -1,0 +1,33 @@
+Desenvolva um código e crie nele:
+
+- um objeto com, no mínimo, três propriedades;
+- um array de tamanho três no mínimo;
+- duas funções, a primeira lista as propriedades do objeto e a segunda, os elementos do array.
+
+
+
+var paises =   ["Brasil","Alemanha","Portugal" ]
+   
+};
+
+
+function listaObj()
+{
+    console.log("Propriedades: ")
+    for(var temp in paises){
+
+        console.log(temp +  " - " + paises[temp]);
+    }
+
+}  
+
+
+function elementosDoArray() {
+    for (let paises of paises) {
+        console.log(paises)
+    } 
+}
+
+
+listaObj()
+elementosDoArray()
