@@ -1,0 +1,32 @@
+//Função tradicional
+function saudacao(){
+    return "Calculadora simples de funções."
+}
+console.log(saudacao())
+
+//funções tradicionais.
+function soma(a,b){
+    return a+b
+}
+function subtracao(a,b){
+    return a-b
+}
+function multiplicacao(a,b){
+    return a*b
+}
+function divisao(a,b){
+    return a/b
+}
+
+//Arrow Functions.
+var quadrado = a=>a**3
+var cubo = a=>a**3
+
+//Teste
+console.log(soma(8,2))
+console.log(subtracao(15,5))
+console.log(multiplicacao(4,4))
+console.log(subtracao(-8,5))
+console.log(divisao(50,2))
+console.log(quadrado(6))
+console.log(cubo(2))
